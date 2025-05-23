@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Operations</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, button, select { margin: 5px; }
+    .section { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Array Operations Tool</h2>
+
+  <div class="section">
+    <label>Enter integers (comma-separated):</label><br>
+    <input type="text" id="intInput" placeholder="e.g., 1, -2, 3">
+    <button onclick="saveIntegers()">Save Integers</button>
+    <p id="intArrayDisplay"></p>
+  </div>
+
+  <div class="section">
+    <label>Enter real numbers (comma-separated):</label><br>
+    <input type="text" id="realInput" placeholder="e.g., 1.5, 2, 3.2">
+    <button onclick="saveReals()">Save Reals</button>
+    <p id="realArrayDisplay"></p>
+  </div>
+
+  <div class="section">
+    <label>Choose a function:</label><br>
+    <select id="functionSelector">
+      <option value="1">1. Sum of positive integers</option>
+      <option value="2">2. Count positive integers</option>
+      <option value="3">3. Find smallest integer</option>
+      <option value="4">4. Find smallest positive integer</option>
+      <option value="5">5. Find last even number</option>
+      <option value="6">6. Swap values at two positions</option>
+      <option value="7">7. Sort array in ascending order</option>
+      <option value="8">8. Find first prime number</option>
+      <option value="9">9. Count integers in real array</option>
+      <option value="10">10. Compare count of positives and negatives</option>
+    </select><br>
+
+    <label>If swapping, enter two positions:</label><br>
+    <input type="number" id="pos1" placeholder="Position 1">
+    <input type="number" id="pos2" placeholder="Position 2"><br>
+
+    <button onclick="performFunction()">Execute</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
